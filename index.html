@@ -1,33 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
+    <p
+      class="li"
+      nk
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/61ebb60581.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Your Personal Web Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #ffffff;
+      }
+      header {
+        color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+      }
+      .h1 {
+        margin: none;
+        font-size: 24px;
+      }
+      nav ul {
+        list-style: none;
+        padding: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        content: center;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        text-align: none;
+        color: #333;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .portfolio__row > * {
+        width: 400px;
+      }
+      .portfolio__row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      .stats__row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      .blogs__row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      .portfolio__row > *,
+      .stats__row > *,
+      .blogs__row > * {
+        width: 450px;
+        text-align: center;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .section {
+        padding: 20px;
+        width: 100%;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+      }
+      .h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .work,
+      .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .work img,
+      .blog img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      .work__description text {
+        text-align: center;
+      }
+      .work__description .h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      .work__description p {
+        font-size: 14 px;
+        margin-bottom: none;
+      }
+      .social-media {
+        font-size: 20px;
+      }
+      .flex {
+        display: flex;
+      }
+      .justify-around {
+        display: flex;
+        justify-content: space-around;
+      }
+      .list-none {
+        list-style: none;
+      }
+      .p-2 {
+        padding: 0.5rem;
+      }
+    </style>
   </head>
   <body>
+    <!-- session final-3 -->
+    <!-- Task: use semantic HTML for element with class 'header' -->
     <div class="header">
-        <p class="h1">shireen</p>
-        <div class="nav">
-            <div class="ul">
-                <a href="home.html">home</a>
-                <a href="about.html">about</a>
-                <a href="portfolio.html">portfolio</a>
-                <a href="service.html">service</a>
-                <a href="blog.html">blog</a>
-                <a href="contact.html">contact</a>
-            </div>
-        </div>    
+      <!-- session final-3 -->
+      <!-- Task: use semantic HTML for element with class 'h1' -->
+      <p class="h1">Your Name</p>
+      <!-- session final-3 -->
+      <!-- Task: use semantic HTML for element with class 'nav' -->
+      <div class="nav">
+        <!-- session final-3 -->
+        <!-- Task: use semantic HTML for element with class 'ul' -->
+        <div class="ul">
+          <!-- session final-3 -->
+          <!-- Task: use semantic HTML for anchor elements inside 'ul' -->
+          <a class="li" href="#home">Home</a>
+          <a class="li" href="#about">About</a>
+          <a class="li" href="#portfolio">Portfolio</a>
+          <a class="li" href="#services">Services</a>
+          <a class="li" href="#blog">Blog</a>
+          <a class="li" href="#contact">Contact</a>
+        </div>
+      </div>
     </div>
+    <!-- session final-3 -->
+    <!-- Task: use semantic HTML for element with class 'main' -->
     <div class="main">
-        <div class="section" id="home"><p class="h2">home</p></div>
-        <div class="section" id="about">about</div>
-        <div class="section" id="portfolio"><p class="h3">portfolio</p></div>
-        <div class="section" id="service"><p>service</p></div>
-        <div class="section" id="blog"><p>blog</p></div>
-        <div class="section" id="contact"><strong>contact</strong></div>
-    </div>
+      <!-- session final-3 -->
+      <!-- Task: use semantic HTML for element with class 'section' -->
+      <div class="section" id="home">
+        <!-- session final-3 -->
+        <!-- Task: use semantic HTML for all elements with class 'h2' -->
+        <p class="h2">Home</p>
+        <p>Welcome to my website!</p>
+        <br />
+        <p>
+          <strong>This site is ... </strong> Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Exercitationem, sapiente soluta in ipsum
+          obcaecati esse quisquam dolorem quas ullam autem voluptates laboriosam
+          deleniti, nisi eveniet tenetur modi eligendi eos dolor pariatur
+          facilis aspernatur. Assumenda obcaecati omnis repellendus expedita
+          debitis hic, vel officia velit! Fuga molestiae aspernatur quaerat
+          culpa inventore harum laboriosam explicabo quod mollitia incidunt
+          expedita nostrum officiis sapiente, maxime ducimus magni velit
+          distinctio dolorem ipsam veritatis voluptate itaque. Iusto delectus
+          vero architecto obcaecati pariatur aspernatur, id expedita, minima
+          veniam dolor molestiae dolorem ullam minus officiis nobis unde optio
+          voluptas est cumque cupiditate voluptatum a laudantium hic. Nesciunt,
+          reprehenderit id!
+        </p>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          maiores, cum optio a recusandae id tempora suscipit dolorum voluptatem
+          mollitia in. Sit, tempora eum repellat magni doloremque incidunt
+          voluptatem omnis saepe repudiandae sapiente quisquam iste aliquam
+          assumenda sunt, autem aperiam, accusamus alias. Nihil unde reiciendis
+          fugit est doloribus itaque, consectetur necessitatibus neque totam hic
+          quod nostrum modi vel sed ipsum, a sint repellendus culpa pariatur,
+          placeat maiores explicabo quam esse. Reprehenderit itaque saepe atque
+          minus doloribus iure, veritatis temporibus esse, provident sit
+          nostrum, incidunt necessitatibus fugiat officia. Omnis, nobis
+          voluptatibus itaque nihil corporis aperiam architecto reiciendis
+          provident cum, a consequatur, dolor quia modi ad in eveniet saepe
+          commodi dolorem odio iusto explicabo suscipit quisquam? Enim quaerat
+          repudiandae aliquid velit reiciendis.
+        </p>
+      </div>
 
-   
+      <div class="section" id="about">
+        <p class="h2">About Me</p>
+        <p>
+          <strong> A personal summary about me: </strong> Lorem ipsum, dolor sit
+          amet consectetur adipisicing elit. Deleniti, magni recusandae? Alias
+          iste laudantium mollitia, voluptatem at eius cumque voluptatum vel
+          praesentium necessitatibus cupiditate fuga iure error aut blanditiis
+          atque nam expedita odit provident quibusdam modi ad ab asperiores?
+          Voluptatum deserunt culpa rerum itaque nihil sit magnam atque. Odit
+          laboriosam accusamus esse tempore quo nulla temporibus, libero dolorem
+          expedita, omnis in natus officia, consequuntur modi magnam. Ex,
+          corporis numquam. Sit officiis aspernatur quos ipsum praesentium,
+          commodi corrupti rerum vel aut!
+        </p>
+      </div>
+
+      <div class="section" id="portfolio">
+        <p class="h2">Portfolio</p>
+        <div class="portfolio__row">
+          <div class="work">
+            <img
+              src="images\download (1).jpg"
+              alt="Work 1"
+            />
+            <div class="work__description">
+              <p class="h3">Work 1</p>
+              <p>Provide a brief description or caption for this work.</p>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="images\download (2).jpg"
+              alt="Work 2"
+            />
+            <div class="work__description">
+              <p class="h3">Work 2</p>
+              <p>Provide a brief description or caption for this work.</p>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="images\download (3).jpg"
+              alt="Work 3"
+            />
+            <div class="work__description">
+              <p class="h3">Work 3</p>
+              <p>Provide a brief description or caption for this work.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more work examples as needed -->
+      </div>
+
+      <div class="section" id="services">
+        <p class="h2">Services</p>
+        <p>
+          <strong>Service 1:</strong>Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Nihil itaque enim, natus cumque recusandae iste ea
+          corrupti sequi autem unde placeat, modi odit voluptate omnis dolorum?
+          At et exercitationem eligendi.
+        </p>
+        <p>
+          <strong>Service 2:</strong>Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ad eum distinctio deleniti veniam veritatis minima
+          officia quod. Officia nobis, neque alias natus odio unde quia
+          accusantium eum aperiam velit error a nulla impedit, veritatis
+          numquam? Architecto commodi earum tenetur hic perferendis aliquid aut
+          qui consequuntur.
+        </p>
+        <p>
+          <strong>Service 3:</strong>Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Sint tenetur aliquam, repudiandae et fugit,
+          blanditiis est incidunt alias ex adipisci error. Facere quidem eaque
+          rem minima. Nemo maxime, voluptatem harum repudiandae minima commodi
+          impedit doloremque dicta iste officia quam libero ut velit esse soluta
+          recusandae enim inventore iusto dignissimos consectetur, dolorum nam
+          nostrum. Molestiae, sapiente.
+        </p>
+      </div>
+
+      <div class="section" id="stats">
+        <p class="h2">Stats</p>
+        <div class="stats__row">
+          <div class="stat">
+            <p class="h3">100</p>
+            <p>Happy Clients</p>
+          </div>
+
+          <div class="stat">
+            <p class="h3">200</p>
+            <p>Projects Completed</p>
+          </div>
+
+          <div class="stat">
+            <p class="h3">300</p>
+            <p>Blog Posts</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="blog">
+        <p class="h2">Blog</p>
+        <div class="blogs__row">
+          <div class="blog">
+            <img
+              src="images\dow (1).jpg"
+              alt="blog 1"
+            />
+            <div class="blog__description">
+              <p class="h3">Blog 1</p>
+              <p>Provide a brief description or caption for this blog.</p>
+            </div>
+          </div>
+
+          <div class="blog">
+            <img
+              src="images\dow (2).jpg"
+              alt="blog 2"
+            />
+            <div class="blog__description">
+              <p class="h3">Blog 2</p>
+              <p>Provide a brief description or caption for this blog.</p>
+            </div>
+          </div>
+
+          <div class="blog">
+            <img
+              src="images\dow (3).jpg"
+              alt="blog 3"
+            />
+            <div class="blog__description">
+              <p class="h3">Blog 3</p>
+              <p>Provide a brief description or caption for this blog.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="contact">
+        <p class="h2">Contact</p>
+        <div class="contact__container">
+          <div class="contact__details">
+            <p class="h3">Get in Touch</p>
+            <p>
+              If you have any questions or inquiries, feel free to reach out to
+              us.
+            </p>
+            <div class="ul">
+              <p class="li"><strong>Email:</strong> example@email.com</p>
+              <p class="li"><strong>Phone:</strong> +1 123-456-7890</p>
+            </div>
+          </div>
+          <div class="social-media">
+            <p class="h3">Connect with Us</p>
+            <div class="ul" class="flex p-2 justify-around list-none">
+              <p class="li">
+                <a
+                  href="https://www.facebook.com/example"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-facebook-square"></i> Facebook
+                </a>
+              </p>
+              <p class="li">
+                <a
+                  href="https://twitter.com/example"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-twitter-square"></i> Twitter
+                </a>
+              </p>
+              <p class="li">
+                <a
+                  href="https://www.instagram.com/example"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram-square"></i> Instagram
+                </a>
+              </p>
+              <p class="li">
+                <a
+                  href="https://www.linkedin.com/company/example"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
