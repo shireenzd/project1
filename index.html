@@ -1,117 +1,123 @@
-98% of storage used … If you run out, you won't have enough storage to create, edit, and upload files. Get 100 GB of storage for $1.99 $0.49/month for 3 months.
-solution-1-card.html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card {
+      /* border: 1px red solid; */
+      width: 400px;
+      height: 300px;
+      border-radius: 40px;
+      overflow: hidden;
+      position: relative;
 
-      body {
-        height: 100vh;
-        display: flex;
-      }
+    }
 
-      .card {
-        width: 300px;
-        height: 500px;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.9);
-      }
+    img {
+      width: 500px;
+    }
 
-      .card__header {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 16px;
-        padding-right: 16px;
-      }
+    .text {
+      color: white;
+      position: absolute;
+      left: 40px;
+      bottom: 30px;
+      /* margin: 20px; */
+      /* border: 1px red solid; */
+    }
 
-      .card__image {
-        width: 100%;
-        height: auto;
-        pointer-events: none;
-      }
+    .cards-grid {
+      /* border: 1px red solid; */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
 
-      .card__content {
-        padding: 16px;
-      }
+    }
+  </style>
+  <style>
+   @media only screen and (max-width: 375px) {
+  .card {
+    width: 40%; 
+    height: auto;
+  }
+}
+  </style>
+</head>
 
-      .card__title {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 8px;
-        position: relative;
-      }
+<body>
+  <div class="cards-grid">
+    <div class="card">
+      <div>
+        <img src="images\download (3).jpg" alt="house image">
+      </div>
 
-      .card__title::after {
-        content: attr(title);
-        position: absolute;
-        width: 140px;
-        opacity: 0;
-      }
-
-      .card__title:hover::after {
-        opacity: 1;
-      }
-
-      .card__text {
-        font-size: 14px;
-        color: #666666;
-        margin-bottom: 16px;
-      }
-
-      .card__price {
-        font-size: 16px;
-        margin-top: 8px;
-        font-weight: bold;
-      }
-
-      .card__button {
-        text-decoration: none;
-        background-color: #4caf50;
-        padding: 8px 16px;
-        transition: background-color 1s ease;
-      }
-
-      .card__button:hover {
-        background-color: #45a049;
-      }
-
-      .card--dark {
-        background-color: #333333;
-        box-shadow: 1px 4px 8px red;
-        color: #cccccc;
-      }
-
-      .card--dark .card__button {
-        background-color: #1e824c;
-      }
-      .card--dark .card__button:hover {
-        color: #1a6c3d;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card card--dark">
-      <img src="card-image.jpg" alt="Image" class="card__image" />
-      <span class="card__header">
-        <h2 class="card__title" title="Lorem ipsum title">Card Title</h2>
-        <p class="card__price">$19.99 per month</p>
-      </span>
-      <div class="card__content">
-        <p class="card__text">Lorem.</p>
-        <a href="#" class="card__button">Read More</a>
+      <div class="text">
+        <h1>Title of image</h1>
+        <button>View More</button>
       </div>
     </div>
-  </body>
+
+    <div class="card">
+      <div>
+        <img src="images\download (3).jpg" alt="house image">
+      </div>
+
+      <div class="text">
+        <h1>Title of image</h1>
+        <button>View More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <img src="images\download (3).jpg" alt="house image">
+      </div>
+
+      <div class="text">
+        <h1>Title of image</h1>
+        <button>View More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <img src="images\download (3).jpg" alt="house image">
+      </div>
+
+      <div class="text">
+        <h1>Title of image</h1>
+        <button>View More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <img src="images\download (3).jpg" alt="house image">
+      </div>
+
+      <div class="text">
+        <h1>Title of image</h1>
+        <button>View More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <img src="images\download (3).jpg" alt="house image">
+      </div>
+
+      <div class="text">
+        <h1>Title of image</h1>
+        <button>View More</button>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
 </html>
