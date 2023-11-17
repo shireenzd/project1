@@ -1,5 +1,3 @@
-98% of storage used … If you run out, you won't have enough storage to create, edit, and upload files. Get 100 GB of storage for $1.99 $0.49/month for 3 months.
-solution-1-card.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,12 +11,10 @@ solution-1-card.html
         margin: 0;
         padding: 0;
       }
-
       body {
         height: 100vh;
         display: flex;
       }
-
       .card {
         width: 300px;
         height: 500px;
@@ -26,7 +22,11 @@ solution-1-card.html
         overflow: hidden;
         box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.9);
       }
-
+      .card--dark {
+        background-color: #333333;
+        box-shadow: 1px 4px 8px red;
+        color: #cccccc;
+      }
       .card__header {
         display: flex;
         justify-content: space-between;
@@ -35,82 +35,72 @@ solution-1-card.html
         padding-left: 16px;
         padding-right: 16px;
       }
-
       .card__image {
         width: 100%;
         height: auto;
         pointer-events: none;
       }
-
       .card__content {
         padding: 16px;
       }
-
       .card__title {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
         margin-bottom: 8px;
         position: relative;
       }
-
       .card__title::after {
         content: attr(title);
         position: absolute;
         width: 140px;
         opacity: 0;
       }
-
       .card__title:hover::after {
         opacity: 1;
       }
-
       .card__text {
         font-size: 14px;
         color: #666666;
         margin-bottom: 16px;
       }
-
       .card__price {
         font-size: 16px;
         margin-top: 8px;
         font-weight: bold;
       }
-
       .card__button {
         text-decoration: none;
         background-color: #4caf50;
-        padding: 8px 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
         transition: background-color 1s ease;
       }
-
-      .card__button:hover {
+      .card_button:hover {
         background-color: #45a049;
       }
-
-      .card--dark {
-        background-color: #333333;
-        box-shadow: 1px 4px 8px red;
-        color: #cccccc;
-      }
-
-      .card--dark .card__button {
+      .card__dark .card__button {
         background-color: #1e824c;
       }
-      .card--dark .card__button:hover {
-        color: #1a6c3d;
+      .card__dark .card__button:hover {
+        background-color: #1a6c3d;
       }
     </style>
   </head>
   <body>
+    <!-- session final-1 -->
     <div class="card card--dark">
-      <img src="card-image.jpg" alt="Image" class="card__image" />
-      <span class="card__header">
-        <h2 class="card__title" title="Lorem ipsum title">Card Title</h2>
-        <p class="card__price">$19.99 per month</p>
-      </span>
-      <div class="card__content">
-        <p class="card__text">Lorem.</p>
-        <a href="#" class="card__button">Read More</a>
+      <img src="images\cards.jpg" alt="card" class="card__image" />
+      <div>
+        <span class="card__header">
+          <h2 class="card__title" title="lorem ipsum title">card title</h2>
+          <p class="card__Price">19.999$ per month</p>
+        </span>
+        <div class="card__content">
+          <p class="card__text">lorem.</p>
+          <a href="#" class="card__button">read more</a>
+        </div>
       </div>
     </div>
   </body>
